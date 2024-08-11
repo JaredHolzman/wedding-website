@@ -1,4 +1,3 @@
-import "./App.css";
 import Section from "./Section";
 
 // <a href="https://vitejs.dev" target="_blank">
@@ -7,7 +6,7 @@ import Section from "./Section";
 
 function App() {
   return (
-    <main>
+    <main className="w-full">
       <Section />
     </main>
   );

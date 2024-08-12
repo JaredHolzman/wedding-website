@@ -8,7 +8,7 @@ import wideSideBySide from "./assets/wideSideBySide.jpg";
 
 function App() {
   return (
-    <main className="w-full">
+    <main className="w-full text-center">
       <Section
         heading={"We're Getting Married!"}
         subheading={
@@ -16,14 +16,14 @@ function App() {
         }
         imgSrc={wideSideBySide}
       >
-        <div className="my-8 flex justify-around">
+        <div className="mt-8 flex justify-around">
           <button className="btn">RSVP</button>
           <button className="btn">More Info</button>
         </div>
       </Section>
-      <section className="grid w-full">
+      <section className="mb-4 grid w-full">
         <img src={wideSideBySide} />
-        <div className="p-8 text-center">
+        <div className="m-6">
           <h2 className="mb-4 text-2xl">Accommodations</h2>
           <p>
             The ceremony will be held at Majest Mirage Punta Cana. We are
@@ -35,21 +35,7 @@ function App() {
           </p>
         </div>
       </section>
-      <section className="grid w-full">
-        <img src={wideSideBySide} />
-        <div className="p-8 text-center">
-          <h2 className="mb-4 text-2xl">Accommodations</h2>
-          <p>
-            The ceremony will be held at Majest Mirage Punta Cana. We are
-            working with Honeymoons, Inc. to handle room reservations. All
-            bookings will include shuttle transfer to and from the airport. To
-            allow for flexibility, rooms are NOT reserved. Please book as early
-            as possible to lock-in the best possible rate for yourself. See
-            below for room options and booking details.
-          </p>
-        </div>
-      </section>
-      <section>
+      <section className="mb-4 w-full">
         <RoomsCarousel />
       </section>
     </main>

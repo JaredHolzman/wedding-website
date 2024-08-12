@@ -109,6 +109,7 @@ function RoomsCarousel() {
 export default function RoomsSection() {
   return (
     <section className="mb-4 w-full">
+      <h2 className="mb-4 text-2xl">Room Options</h2>
       <div className="flex w-full justify-center gap-2 py-2">
         <a href="#room-1b" className="btn btn-sm">
           Standard

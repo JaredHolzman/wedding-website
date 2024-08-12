@@ -1,6 +1,7 @@
 import RoomsSection from "./RoomsSection";
 import Section from "./Section";
 import wideSideBySide from "./assets/wideSideBySide.jpg";
+import majesticMirage from "./assets/majestic-mirage.jpg";
 
 // <a href="https://vitejs.dev" target="_blank">
 //   <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -22,11 +23,11 @@ function App() {
         </div>
       </Section>
       <section className="mb-4 grid w-full">
-        <img src={wideSideBySide} />
+        <h2 className="mb-4 text-2xl">Accommodations</h2>
+        <img src={majesticMirage} />
         <div className="m-6">
-          <h2 className="mb-4 text-2xl">Accommodations</h2>
           <p>
-            The ceremony will be held at Majest Mirage Punta Cana. We are
+            The ceremony will be held at Majestic Mirage Punta Cana. We are
             working with Honeymoons, Inc. to handle room reservations. All
             bookings will include shuttle transfer to and from the airport. To
             allow for flexibility, rooms are NOT reserved. Please book as early

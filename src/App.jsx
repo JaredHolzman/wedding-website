@@ -1,4 +1,4 @@
-import RoomsCarousel from "./RoomsCarousel";
+import RoomsSection from "./RoomsSection";
 import Section from "./Section";
 import wideSideBySide from "./assets/wideSideBySide.jpg";
 
@@ -35,9 +35,7 @@ function App() {
           </p>
         </div>
       </section>
-      <section className="mb-4 w-full">
-        <RoomsCarousel />
-      </section>
+      <RoomsSection />
     </main>
   );
 }

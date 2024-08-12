@@ -1,3 +1,4 @@
+import RoomsCarousel from "./RoomsCarousel";
 import Section from "./Section";
 import wideSideBySide from "./assets/wideSideBySide.jpg";
 
@@ -47,6 +48,9 @@ function App() {
             below for room options and booking details.
           </p>
         </div>
+      </section>
+      <section>
+        <RoomsCarousel />
       </section>
     </main>
   );

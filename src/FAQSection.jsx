@@ -2,9 +2,7 @@ function FAQSection() {
   return (
     <section className="mb-4 grid w-full">
       <h2 className="mb-4 text-2xl">FAQ</h2>
-      <div className="m-6">
-        <FAQCollapse />
-      </div>
+      <FAQCollapse />
     </section>
   );
 }
@@ -14,7 +12,7 @@ function FAQCollapse() {
     "https://travel.state.gov/content/travel/en/international-travel/" +
     "International-Travel-Country-Information-Pages/DominicanRepublic.html";
   return (
-    <div className="join join-vertical w-full">
+    <div className="join join-vertical w-full rounded-none ">
       <CollapseItem title={"When Should I Arrive and How Long Should I Stay?"}>
         <p>
           The ceremony will take place in the evening on June 6th. You should
@@ -73,7 +71,7 @@ function FAQCollapse() {
           {" "}
           You should bring sunglasses, hats, swimsuits, sandals, bug spray, and
           lots of sunscreen. Some resort restaurants have a dress-code, so make
-          sure to pack some &apos;business-casual&apos; outfits as well.
+          sure to pack some &quot;business-casual&quot; outfits as well.
         </p>
       </CollapseItem>
       <CollapseItem title={"What Temperatures Should I Expect?"}>
@@ -88,7 +86,10 @@ function FAQCollapse() {
 
 function CollapseItem({ title, children }) {
   return (
-    <div className="collapse join-item collapse-arrow border border-base-300">
+    <div
+      className={`collapse join-item collapse-arrow border
+        border-base-300 bg-base-200`}
+    >
       <input type="radio" name="accordion-item" />
       <div className="collapse-title text-xl font-medium">{title}</div>
       <div className="collapse-content">{children}</div>

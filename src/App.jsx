@@ -1,7 +1,7 @@
 import RoomsSection from "./RoomsSection";
 import BookingSection from "./BookingSection";
 import LandingSection from "./LandingSection";
-import LocationSection from "./LocationSection";
+import DetailsSection from "./DetailsSection";
 import FAQSection from "./FAQSection";
 
 import heart from "./assets/heart.svg";
@@ -11,7 +11,7 @@ function App() {
     <>
       <main className="w-full text-center">
         <LandingSection />
-        <LocationSection />
+        <DetailsSection />
         <BookingSection />
         <RoomsSection />
         <FAQSection />

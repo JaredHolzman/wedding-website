@@ -2,10 +2,10 @@ import majesticMirage from "./assets/majestic-mirage.jpg";
 
 export default function DetailsSection() {
   return (
-    <section id="details" className="mb-4 grid w-full scroll-mt-6">
-      <h2 className="mb-4 text-2xl">Event Details</h2>
-      <img src={majesticMirage} />
-      <div className="m-6 space-y-4">
+    <section id="details" className="py-10 grid w-full scroll-mt-6 bg-base-300">
+      <h2 className="text-4xl">Event Details</h2>
+      <img src={majesticMirage} className="mt-8" />
+      <div className="mx-6 py-12 space-y-4">
         <p>
           The ceremony will be held on{" "}
           <span className="font-semibold">June 06, 2025, 6:00PM</span> at the{" "}

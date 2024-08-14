@@ -29,11 +29,7 @@ function CloseIcon() {
 export default function NavMenu() {
   return (
     <div className="dropdown dropdown-bottom dropdown-end absolute right-4 top-4 z-10">
-      <div
-        tabIndex={0}
-        role="button"
-        className="btn btn-square btn-outline btn-primary"
-      >
+      <div tabIndex={0} role="button" className="btn btn-square btn-neutral">
         <HamburgerIcon />
       </div>
       <ul

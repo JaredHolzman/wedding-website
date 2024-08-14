@@ -1,7 +1,10 @@
 function FAQSection() {
   return (
-    <section id="faq" className="mt-8 mb-4 grid w-full scroll-mt-6">
-      <h2 className="mb-4 text-2xl">FAQ</h2>
+    <section
+      id="faq"
+      className="pt-10 pb-16 grid w-full scroll-mt-6 bg-primary text-primary-content"
+    >
+      <h2 className="mb-8 text-4xl">FAQ</h2>
       <FAQCollapse />
     </section>
   );
@@ -88,7 +91,7 @@ function CollapseItem({ title, children }) {
   return (
     <div
       className={`collapse join-item collapse-arrow border
-        border-base-300 bg-base-200`}
+        border-accent-content/30 bg-accent/30`}
     >
       <input type="radio" name="accordion-item" />
       <div className="collapse-title text-xl font-medium">{title}</div>

@@ -18,7 +18,7 @@ function App() {
         <RoomsSection />
         <FAQSection />
       </main>
-      <footer className="footer footer-center mt-8 bg-base-300 p-4 text-base-content">
+      <footer className="footer footer-center bg-base-300 p-4 text-base-content">
         <aside>
           <p>
             made with

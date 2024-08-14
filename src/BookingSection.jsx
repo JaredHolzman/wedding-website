@@ -2,23 +2,24 @@ import honeymoonsInc from "./assets/honeymoons-inc.jpg";
 
 export default function BookingSection() {
   return (
-    <section id="booking" className="mb-4 grid w-full scroll-mt-6">
-      <h2 className="mb-4 text-2xl">Booking</h2>
-      <img src={honeymoonsInc} />
-      <div className="m-6">
+    <section
+      id="booking"
+      className="py-10 grid w-full scroll-mt-6 bg-neutral text-neutral-content"
+    >
+      <h2 className="text-4xl">Booking</h2>
+      <img src={honeymoonsInc} className="mt-8" />
+      <div className="mx-6 pt-12 space-y-4">
         <p>
           We are working with Honeymoons, Inc. to handle reservations.
           Reservations include a resort stay as well as shuttle transfer to and
           from the airport. Airline flights must be booked separately.
         </p>
-        <p className="mt-2">
+        <p>
           To allow for flexibility, rooms are NOT reserved. Please book as early
           as possible to lock-in the best possible rate for yourself.
         </p>
-        <p className="mt-2">
-          Please contact Catherina Eberhart with any questions or concerns.
-        </p>
-        <ul className="mt-2">
+        <p>Please contact Catherina Eberhart with any questions or concerns.</p>
+        <ul>
           <li>
             Email:{" "}
             <a
@@ -41,9 +42,11 @@ export default function BookingSection() {
           </li>
           <li>Business Hours: Monday-Friday, 9am-5pm EST</li>
         </ul>
+      </div>
+      <div className="flex justify-center py-12">
         <a
           role="button"
-          className="btn btn-primary mt-8"
+          className="btn btn-primary"
           href="https://traveljoy.com/groups/aymFt2DRBCWzNrFUU2M3qkVk/forms/sJH1S2cdP8kWsCrejSTh6pqq"
           target="_blank"
         >

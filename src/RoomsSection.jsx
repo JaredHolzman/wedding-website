@@ -18,9 +18,9 @@ function RoomSlide({
   ));
   const clubRateRows = clubRates.map((rate, idx) => <td key={idx}>{rate}</td>);
   return (
-    <div id={id} className="carousel-item grid w-full scroll-mt-32">
+    <div id={id} className="carousel-item grid w-full scroll-mt-44">
       <div>
-        <h3 className="mb-6 text-xl">{roomType}</h3>
+        <h3 className="mb-6 text-2xl">{roomType}</h3>
         <img src={imgSrc} className="w-full" />
         <p className="mx-4 mt-6">{description}</p>
         <div className="mt-4 overflow-x-auto">
@@ -108,8 +108,8 @@ function RoomsCarousel() {
 
 export default function RoomsSection() {
   return (
-    <section className="mb-4 w-full scroll-mt-6">
-      <h2 className="mb-4 text-2xl">Room Options</h2>
+    <section className="py-10 w-full scroll-mt-6">
+      <h2 className="mb-8 text-4xl">Room Options</h2>
       <div className="flex w-full justify-center gap-2 py-2">
         <a href="#room-1b" className="btn btn-sm">
           Standard

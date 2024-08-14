@@ -41,10 +41,16 @@ export default function NavMenu() {
         className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
       >
         <li>
-          <a>Item 1</a>
+          <a href="#">Home</a>
         </li>
         <li>
-          <a>Item 2</a>
+          <a href="#details">Event Details</a>
+        </li>
+        <li>
+          <a href="#booking">Accommodations</a>
+        </li>
+        <li>
+          <a href="#faq">FAQ</a>
         </li>
       </ul>
     </div>

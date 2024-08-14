@@ -3,7 +3,7 @@ import roomSkyView from "./assets/rooms/room-sky-view.jpg";
 import roomSwimUp from "./assets/rooms/room-swim-up.jpg";
 import roomOceanView from "./assets/rooms/room-ocean-view.jpg";
 
-const asterick = <span className="align-text-top text-xs">*</span>;
+const asterisk = <span className="align-text-top text-xs">*</span>;
 
 function RoomSlide({
   id,
@@ -18,7 +18,7 @@ function RoomSlide({
   ));
   const clubRateRows = clubRates.map((rate, idx) => <td key={idx}>{rate}</td>);
   return (
-    <div id={id} className="carousel-item grid w-full">
+    <div id={id} className="carousel-item grid w-full scroll-mt-32">
       <div>
         <h3 className="mb-6 text-xl">{roomType}</h3>
         <img src={imgSrc} className="w-full" />
@@ -108,7 +108,7 @@ function RoomsCarousel() {
 
 export default function RoomsSection() {
   return (
-    <section className="mb-4 w-full">
+    <section className="mb-4 w-full scroll-mt-6">
       <h2 className="mb-4 text-2xl">Room Options</h2>
       <div className="flex w-full justify-center gap-2 py-2">
         <a href="#room-1b" className="btn btn-sm">
@@ -128,9 +128,9 @@ export default function RoomsSection() {
         <div className="w-5/6 border-t-2" />
       </div>
       <RoomsCarousel />
-      <p className="text-sm">
-        {asterick}These are estimates and subject to change until you book.
-        Rates are per person, based on 2 adults sharing a room. To recieve a
+      <p className="text-sm mb-6">
+        {asterisk}These are estimates and subject to change until you book.
+        Rates are per person, based on 2 adults sharing a room. To receive a
         quote, please fill out the &quot;Request Room&quot; form where you can
         specify details about room occupancy, dates, etc.
       </p>

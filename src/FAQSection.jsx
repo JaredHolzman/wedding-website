@@ -1,6 +1,6 @@
 function FAQSection() {
   return (
-    <section className="mb-4 grid w-full">
+    <section id="faq" className="mt-8 mb-4 grid w-full scroll-mt-6">
       <h2 className="mb-4 text-2xl">FAQ</h2>
       <FAQCollapse />
     </section>

@@ -2,7 +2,7 @@ import honeymoonsInc from "./assets/honeymoons-inc.jpg";
 
 export default function BookingSection() {
   return (
-    <section className="mb-4 grid w-full">
+    <section id="booking" className="mb-4 grid w-full scroll-mt-6">
       <h2 className="mb-4 text-2xl">Booking</h2>
       <img src={honeymoonsInc} />
       <div className="m-6">

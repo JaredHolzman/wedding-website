@@ -31,8 +31,9 @@ export default function LandingSection() {
           love and say &quot;I do&quot;
         </p>
         <p>
-          We are having a destination wedding in Punta Cana and would love for
-          you to join us for our wedding celebration at the beautiful Majestic
+          We are having a destination wedding in{" "}
+          <span className="font-bold">Punta Cana</span> and would love for you
+          to join us for our wedding celebration at the beautiful Majestic
           Mirage Resort.
         </p>
         <p>
@@ -45,8 +46,10 @@ export default function LandingSection() {
         <p className="text-lg font-semibold">Jared & Joanna</p>
       </div>
       <div className="mt-8 flex justify-around">
-        <button className="btn btn-primary">RSVP</button>
-        <button className="btn">More Info</button>
+        <button className="btn btn-outline btn-primary px-8 text-lg">
+          RSVP
+        </button>
+        {/* <button className="btn">More Info</button> */}
       </div>
     </Section>
   );

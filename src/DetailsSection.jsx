@@ -2,12 +2,15 @@ import majesticMirage from "./assets/majestic-mirage.jpg";
 
 export default function DetailsSection() {
   return (
-    <section id="details" className="grid w-full scroll-mt-6 bg-base-300 py-10">
-      <h2 className="text-4xl">Event Details</h2>
-      <div className="flex w-full justify-center">
-        <img src={majesticMirage} className="mt-8" />
+    <section
+      id="details"
+      className="grid w-full scroll-mt-6 bg-base-300 py-10 md:py-32"
+    >
+      <h2 className="text-4xl md:text-7xl ">Event Details</h2>
+      <div className="flex w-full justify-center py-8 md:py-16">
+        <img src={majesticMirage} />
       </div>
-      <div className="mx-6 space-y-4 py-12 text-xl">
+      <div className="mx-6 space-y-4 py-12 text-xl md:space-y-12 md:text-4xl">
         <p>
           The ceremony will be held on{" "}
           <span className="font-semibold">June 06, 2025, 6:00PM</span> at the{" "}

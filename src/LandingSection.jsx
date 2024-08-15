@@ -27,11 +27,11 @@ export default function LandingSection() {
       <div className="flex w-full justify-center">
         <img src={wideSideBySide} />
       </div>
-      <div className="px-6 py-8 md:py-32">
+      <div className="grid justify-center px-6 py-8 md:py-32">
         <h2 className="mb-8 text-4xl md:text-7xl">
           {"We're Getting Married!"}
         </h2>
-        <div className="space-y-4 text-xl md:space-y-12 md:text-4xl">
+        <div className="max-w-prose space-y-4 text-xl md:space-y-12 md:text-4xl">
           <p className="mb-8 text-base italic md:text-2xl">
             Come join us for a beach-side destination wedding as we celebrate
             our love and say &quot;I do&quot;

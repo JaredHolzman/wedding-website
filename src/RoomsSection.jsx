@@ -3,7 +3,7 @@ import roomSkyView from "./assets/rooms/room-sky-view.jpg";
 import roomSwimUp from "./assets/rooms/room-swim-up.jpg";
 import roomOceanView from "./assets/rooms/room-ocean-view.jpg";
 
-const asterisk = <span className="align-text-top text-xs">*</span>;
+const asterisk = <span className="align-text-top text-xs md:text-3xl">*</span>;
 
 function RoomSlide({
   id,
@@ -14,39 +14,49 @@ function RoomSlide({
   clubRates,
 }) {
   const familyRateRows = familyRates.map((rate, idx) => (
-    <td key={idx}>{rate}</td>
+    <td key={idx} className="md:text-3xl">
+      {rate}
+    </td>
   ));
-  const clubRateRows = clubRates.map((rate, idx) => <td key={idx}>{rate}</td>);
+  const clubRateRows = clubRates.map((rate, idx) => (
+    <td key={idx} className="md:text-3xl">
+      {rate}
+    </td>
+  ));
+
   return (
-    <div id={id} className="carousel-item grid w-full scroll-mt-44">
-      <div>
-        <h3 className="mb-6 text-2xl">{roomType}</h3>
-        <div className="flex w-full justify-center">
-          <img src={imgSrc} className="max-h-[36rem]" />
-        </div>
-        <p className="mx-4 mt-6">{description}</p>
-        <div className="mt-4 overflow-x-auto">
-          <table className="table">
-            <thead>
-              <tr>
-                <th>Est. Room Rates*</th>
-                <th>3 nights</th>
-                <th>4 nights</th>
-                <th>5 nights</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Family Club:</th>
-                {familyRateRows}
-              </tr>
-              <tr>
-                <th>Mirage Club (18+):</th>
-                {clubRateRows}
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <div
+      id={id}
+      className="carousel-item grid w-full scroll-mt-44 justify-center"
+    >
+      <h3 className="mb-6 text-2xl md:mb-12 md:text-5xl">{roomType}</h3>
+      <div className="flex w-full justify-center">
+        <img src={imgSrc} className="max-h-[36rem]" />
+      </div>
+      <p className="mx-4 mt-6 max-w-prose md:mt-12 md:text-3xl">
+        {description}
+      </p>
+      <div className="mt-4 overflow-x-auto md:mt-8">
+        <table className="table md:table-lg">
+          <thead>
+            <tr>
+              <th className="md:text-2xl">Est. Room Rates*</th>
+              <th className="md:text-2xl">3 nights</th>
+              <th className="md:text-2xl">4 nights</th>
+              <th className="md:text-2xl">5 nights</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th className="md:text-3xl">Family Club:</th>
+              {familyRateRows}
+            </tr>
+            <tr>
+              <th className="md:text-3xl">Mirage Club (18+):</th>
+              {clubRateRows}
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );
@@ -54,7 +64,7 @@ function RoomSlide({
 
 function RoomsCarousel() {
   return (
-    <div className="carousel mb-6 mt-8 w-full">
+    <div className="carousel mb-6 mt-8 w-full md:my-16">
       <RoomSlide
         id="room-1b"
         imgSrc={room1B}
@@ -110,28 +120,43 @@ function RoomsCarousel() {
 
 export default function RoomsSection() {
   return (
-    <section className="w-full scroll-mt-6 py-10">
-      <h2 className="mb-8 text-4xl">Room Options</h2>
+    <section
+      id="rooms"
+      className="grid w-full scroll-mt-6 justify-center py-10 md:py-32"
+    >
+      <h2 className="mb-8 text-4xl md:mb-16 md:text-7xl">Room Options</h2>
 
-      <div className="flex w-full justify-center gap-2 py-2">
-        <a href="#room-1b" className="btn btn-secondary btn-sm ">
+      <div className="flex w-full justify-center gap-2 py-2 md:gap-4">
+        <a
+          href="#room-1b"
+          className="btn btn-secondary btn-sm md:btn-lg md:text-2xl"
+        >
           Standard
         </a>
-        <a href="#room-sky-view" className="btn btn-secondary btn-sm">
+        <a
+          href="#room-sky-view"
+          className="btn btn-secondary btn-sm md:btn-lg md:text-2xl"
+        >
           Sky View
         </a>
-        <a href="#room-swim-up" className="btn btn-secondary btn-sm">
+        <a
+          href="#room-swim-up"
+          className="btn btn-secondary btn-sm md:btn-lg md:text-2xl"
+        >
           Swim Up
         </a>
-        <a href="#room-ocean-view" className="btn btn-secondary btn-sm">
+        <a
+          href="#room-ocean-view"
+          className="btn btn-secondary btn-sm md:btn-lg md:text-2xl"
+        >
           Ocean View
         </a>
       </div>
       <div className="flex w-full justify-center">
-        <div className="w-5/6 border-t-2 border-base-300" />
+        <div className="w-5/6 max-w-prose border-t-2 border-base-300" />
       </div>
       <RoomsCarousel />
-      <p className="mx-2 mb-6 text-sm">
+      <p className="mx-2 mb-6 max-w-prose place-self-center text-sm md:text-4xl">
         {asterisk}These are estimates and subject to change until you book.
         Rates are per person, based on 2 adults sharing a room. To receive a
         quote, please fill out the &quot;Request Room&quot; form where you can

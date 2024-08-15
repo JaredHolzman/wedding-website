@@ -7,7 +7,9 @@ export default function BookingSection() {
       className="grid w-full scroll-mt-6 bg-neutral py-10 text-neutral-content"
     >
       <h2 className="text-4xl">Booking</h2>
-      <img src={honeymoonsInc} className="mt-8" />
+      <div className="flex w-full justify-center">
+        <img src={honeymoonsInc} className="mt-8 max-h-[36rem]" />
+      </div>
       <div className="mx-6 space-y-4 py-12 text-xl">
         <p>
           We are working with Honeymoons, Inc. to handle reservations.

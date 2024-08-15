@@ -24,7 +24,9 @@ function HeroLanding() {
 export default function LandingSection() {
   return (
     <section className="grid w-full scroll-mt-6">
-      <img src={wideSideBySide} />
+      <div className="flex w-full justify-center">
+        <img src={wideSideBySide} />
+      </div>
       <div className="px-6 py-8">
         <h2 className="mb-8 text-4xl">{"We're Getting Married!"}</h2>
         <div className="space-y-4 text-xl">

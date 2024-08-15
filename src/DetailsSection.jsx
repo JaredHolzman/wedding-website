@@ -4,7 +4,9 @@ export default function DetailsSection() {
   return (
     <section id="details" className="grid w-full scroll-mt-6 bg-base-300 py-10">
       <h2 className="text-4xl">Event Details</h2>
-      <img src={majesticMirage} className="mt-8" />
+      <div className="flex w-full justify-center">
+        <img src={majesticMirage} className="mt-8" />
+      </div>
       <div className="mx-6 space-y-4 py-12 text-xl">
         <p>
           The ceremony will be held on{" "}

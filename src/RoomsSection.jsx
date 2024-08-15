@@ -21,7 +21,9 @@ function RoomSlide({
     <div id={id} className="carousel-item grid w-full scroll-mt-44">
       <div>
         <h3 className="mb-6 text-2xl">{roomType}</h3>
-        <img src={imgSrc} className="w-full" />
+        <div className="flex w-full justify-center">
+          <img src={imgSrc} className="max-h-[36rem]" />
+        </div>
         <p className="mx-4 mt-6">{description}</p>
         <div className="mt-4 overflow-x-auto">
           <table className="table">

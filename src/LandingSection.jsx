@@ -27,10 +27,12 @@ export default function LandingSection() {
       <div className="flex w-full justify-center">
         <img src={wideSideBySide} />
       </div>
-      <div className="px-6 py-8">
-        <h2 className="mb-8 text-4xl">{"We're Getting Married!"}</h2>
-        <div className="space-y-4 text-xl">
-          <p className="mb-8 text-base italic">
+      <div className="px-6 py-8 md:py-32">
+        <h2 className="mb-8 text-4xl md:text-7xl">
+          {"We're Getting Married!"}
+        </h2>
+        <div className="space-y-4 text-xl md:space-y-12 md:text-4xl">
+          <p className="mb-8 text-base italic md:text-2xl">
             Come join us for a beach-side destination wedding as we celebrate
             our love and say &quot;I do&quot;
           </p>
@@ -47,12 +49,12 @@ export default function LandingSection() {
           </p>
           <p>We look forward to seeing you in Paradise!</p>
           <p>Love,</p>
-          <p className="text-lg font-semibold">Jared & Joanna</p>
+          <p className="text-lg font-semibold md:text-3xl">Jared & Joanna</p>
         </div>
-        <div className="mb-8 mt-12 flex justify-around">
+        <div className="mb-8 mt-12 flex justify-around md:mt-24">
           <a
             role="button"
-            className="btn btn-accent btn-lg btn-wide text-xl"
+            className="btn btn-accent btn-lg btn-wide text-xl md:text-4xl"
             href="https://withjoy.com/joanna-and-jared-jun-25/rsvp"
           >
             RSVP

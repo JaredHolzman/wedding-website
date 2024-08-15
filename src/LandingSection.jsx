@@ -1,4 +1,3 @@
-import Section from "./Section";
 import wideSideBySide from "./assets/wideSideBySide.jpg";
 
 // eslint-disable-next-line no-unused-vars
@@ -24,31 +23,35 @@ function HeroLanding() {
 
 export default function LandingSection() {
   return (
-    <Section heading={"We're Getting Married!"} imgSrc={wideSideBySide}>
-      <div className="space-y-4">
-        <p className="italic">
-          Come join us for a beach-side destination wedding as we celebrate our
-          love and say &quot;I do&quot;
-        </p>
-        <p>
-          We are having a destination wedding in{" "}
-          <span className="font-bold">Punta Cana</span> and would love for you
-          to join us for our wedding celebration at the beautiful Majestic
-          Mirage Resort.
-        </p>
-        <p>
-          Our ceremony will take place{" "}
-          <span className="font-bold">June 6, 2025</span>, and we hope you come
-          to enjoy a well-deserved vacation with us!
-        </p>
-        <p>We look forward to seeing you in Paradise!</p>
-        <p>Love,</p>
-        <p className="text-lg font-semibold">Jared & Joanna</p>
+    <section className="grid w-full scroll-mt-6">
+      <img src={wideSideBySide} />
+      <div className="px-6 py-8">
+        <h2 className="mb-8 text-4xl">{"We're Getting Married!"}</h2>
+        <div className="space-y-4 text-xl">
+          <p className="mb-8 text-base italic">
+            Come join us for a beach-side destination wedding as we celebrate
+            our love and say &quot;I do&quot;
+          </p>
+          <p>
+            We are having a destination wedding in{" "}
+            <span className="font-bold">Punta Cana</span> and would love for you
+            to join us for our wedding celebration at the beautiful Majestic
+            Mirage Resort.
+          </p>
+          <p>
+            Our ceremony will take place{" "}
+            <span className="font-bold">June 6, 2025</span>, and we hope you
+            come to enjoy a well-deserved vacation with us!
+          </p>
+          <p>We look forward to seeing you in Paradise!</p>
+          <p>Love,</p>
+          <p className="text-lg font-semibold">Jared & Joanna</p>
+        </div>
+        <div className="mt-8 flex justify-around">
+          <button className="btn btn-accent px-8 text-lg">RSVP</button>
+          {/* <button className="btn">More Info</button> */}
+        </div>
       </div>
-      <div className="mt-8 flex justify-around">
-        <button className="btn btn-accent px-8 text-lg">RSVP</button>
-        {/* <button className="btn">More Info</button> */}
-      </div>
-    </Section>
+    </section>
   );
 }

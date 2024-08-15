@@ -27,7 +27,7 @@ function RoomSlide({
           <table className="table">
             <thead>
               <tr>
-                <th>Est. Room Rates</th>
+                <th>Est. Room Rates*</th>
                 <th>3 nights</th>
                 <th>4 nights</th>
                 <th>5 nights</th>
@@ -52,7 +52,7 @@ function RoomSlide({
 
 function RoomsCarousel() {
   return (
-    <div className="carousel my-6 w-full">
+    <div className="carousel mb-6 mt-8 w-full">
       <RoomSlide
         id="room-1b"
         imgSrc={room1B}
@@ -108,27 +108,28 @@ function RoomsCarousel() {
 
 export default function RoomsSection() {
   return (
-    <section className="py-10 w-full scroll-mt-6">
+    <section className="w-full scroll-mt-6 py-10">
       <h2 className="mb-8 text-4xl">Room Options</h2>
+
       <div className="flex w-full justify-center gap-2 py-2">
-        <a href="#room-1b" className="btn btn-sm">
+        <a href="#room-1b" className="btn btn-secondary btn-sm ">
           Standard
         </a>
-        <a href="#room-sky-view" className="btn btn-sm">
+        <a href="#room-sky-view" className="btn btn-secondary btn-sm">
           Sky View
         </a>
-        <a href="#room-swim-up" className="btn btn-sm">
+        <a href="#room-swim-up" className="btn btn-secondary btn-sm">
           Swim Up
         </a>
-        <a href="#room-ocean-view" className="btn btn-sm">
+        <a href="#room-ocean-view" className="btn btn-secondary btn-sm">
           Ocean View
         </a>
       </div>
       <div className="flex w-full justify-center">
-        <div className="w-5/6 border-t-2" />
+        <div className="w-5/6 border-t-2 border-base-300" />
       </div>
       <RoomsCarousel />
-      <p className="text-sm mb-6">
+      <p className="mx-2 mb-6 text-sm">
         {asterisk}These are estimates and subject to change until you book.
         Rates are per person, based on 2 adults sharing a room. To receive a
         quote, please fill out the &quot;Request Room&quot; form where you can

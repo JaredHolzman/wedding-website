@@ -4,11 +4,11 @@ export default function BookingSection() {
   return (
     <section
       id="booking"
-      className="py-10 grid w-full scroll-mt-6 bg-neutral text-neutral-content"
+      className="grid w-full scroll-mt-6 bg-neutral py-10 text-neutral-content"
     >
       <h2 className="text-4xl">Booking</h2>
       <img src={honeymoonsInc} className="mt-8" />
-      <div className="mx-6 pt-12 space-y-4">
+      <div className="mx-6 space-y-4 pt-12 text-xl">
         <p>
           We are working with Honeymoons, Inc. to handle reservations.
           Reservations include a resort stay as well as shuttle transfer to and

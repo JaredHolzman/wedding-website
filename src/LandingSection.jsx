@@ -47,8 +47,14 @@ export default function LandingSection() {
           <p>Love,</p>
           <p className="text-lg font-semibold">Jared & Joanna</p>
         </div>
-        <div className="mt-8 flex justify-around">
-          <button className="btn btn-accent px-8 text-lg">RSVP</button>
+        <div className="mb-8 mt-12 flex justify-around">
+          <a
+            role="button"
+            className="btn btn-accent btn-lg btn-wide text-xl"
+            href="https://withjoy.com/joanna-and-jared-jun-25/rsvp"
+          >
+            RSVP
+          </a>
           {/* <button className="btn">More Info</button> */}
         </div>
       </div>

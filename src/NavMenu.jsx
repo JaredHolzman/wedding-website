@@ -12,6 +12,7 @@ function HamburgerIcon() {
   );
 }
 
+// eslint-disable-next-line no-unused-vars
 function CloseIcon() {
   return (
     <svg
@@ -43,7 +44,7 @@ export default function NavMenu() {
           <a href="#details">Event Details</a>
         </li>
         <li>
-          <a href="#booking">Accommodations</a>
+          <a href="#booking">Booking</a>
         </li>
         <li>
           <a href="#faq">FAQ</a>

@@ -8,7 +8,7 @@ export default function BookingSection() {
     >
       <h2 className="text-4xl">Booking</h2>
       <img src={honeymoonsInc} className="mt-8" />
-      <div className="mx-6 space-y-4 pt-12 text-xl">
+      <div className="mx-6 space-y-4 py-12 text-xl">
         <p>
           We are working with Honeymoons, Inc. to handle reservations.
           Reservations include a resort stay as well as shuttle transfer to and
@@ -18,6 +18,16 @@ export default function BookingSection() {
           To allow for flexibility, rooms are NOT reserved. Please book as early
           as possible to lock-in the best possible rate for yourself.
         </p>
+        <div className="flex justify-center py-8">
+          <a
+            role="button"
+            className="btn btn-primary btn-lg"
+            href="https://traveljoy.com/groups/aymFt2DRBCWzNrFUU2M3qkVk/forms/sJH1S2cdP8kWsCrejSTh6pqq"
+            target="_blank"
+          >
+            Request Room
+          </a>
+        </div>
         <p>Please contact Catherina Eberhart with any questions or concerns.</p>
         <ul>
           <li>
@@ -43,7 +53,7 @@ export default function BookingSection() {
           <li>Business Hours: Monday-Friday, 9am-5pm EST</li>
         </ul>
       </div>
-      <div className="flex justify-center py-12">
+      {/* <div className="flex justify-center py-12">
         <a
           role="button"
           className="btn btn-primary"
@@ -52,7 +62,7 @@ export default function BookingSection() {
         >
           Request Room
         </a>
-      </div>
+      </div> */}
     </section>
   );
 }

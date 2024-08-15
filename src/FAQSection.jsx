@@ -2,9 +2,9 @@ function FAQSection() {
   return (
     <section
       id="faq"
-      className="grid w-full scroll-mt-6 bg-primary pb-16 pt-10 text-primary-content"
+      className="grid w-full scroll-mt-6 bg-primary pb-16 pt-10 text-primary-content md:pb-32 md:pt-20"
     >
-      <h2 className="mb-8 text-4xl">FAQ</h2>
+      <h2 className="mb-8 text-4xl md:mb-16 md:text-7xl">FAQ</h2>
       <FAQCollapse />
     </section>
   );
@@ -15,7 +15,7 @@ function FAQCollapse() {
     "https://travel.state.gov/content/travel/en/international-travel/" +
     "International-Travel-Country-Information-Pages/DominicanRepublic.html";
   return (
-    <div className="join join-vertical w-full rounded-none ">
+    <div className="join join-vertical w-full rounded-none md:container md:mx-auto md:rounded-lg">
       <CollapseItem title={"When Should I Arrive and How Long Should I Stay?"}>
         <p>
           The ceremony will take place in the evening on June 6th. You should
@@ -94,9 +94,11 @@ function CollapseItem({ title, children }) {
         border-accent-content/30 bg-accent/30`}
     >
       <input type="radio" name="accordion-item" />
-      <div className="collapse-title text-2xl font-bold">{title}</div>
-      <div className="collapse-content text-lg">
-        <div className="py-2">{children}</div>
+      <div className="collapse-title text-2xl font-bold md:text-5xl">
+        {title}
+      </div>
+      <div className="collapse-content max-w-prose place-self-center text-lg md:text-4xl">
+        <div className="py-2 md:py-8">{children}</div>
       </div>
     </div>
   );

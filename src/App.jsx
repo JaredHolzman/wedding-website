@@ -18,13 +18,13 @@ function App() {
         <RoomsSection />
         <FAQSection />
       </main>
-      <footer className="footer footer-center bg-base-300 p-4 text-base-content">
+      <footer className="footer footer-center bg-base-300 p-4 text-base-content md:p-6 md:text-2xl">
         <aside>
           <p>
             made with
             <img
               src={heart}
-              className="mx-1.5 inline h-4"
+              className="mx-1.5 inline h-4 md:h-6"
               alt="love"
               title="love"
             />

@@ -59,6 +59,7 @@ export default function LandingSection() {
             role="button"
             className="btn btn-accent btn-lg btn-wide text-xl md:text-4xl"
             href="https://withjoy.com/joanna-and-jared-jun-25/rsvp"
+            target="_blank"
           >
             RSVP
           </a>

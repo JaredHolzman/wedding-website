@@ -16,6 +16,19 @@ function FAQCollapse() {
     "International-Travel-Country-Information-Pages/DominicanRepublic.html";
   return (
     <div className="join join-vertical w-full rounded-none md:container md:mx-auto md:rounded-lg">
+      <CollapseItem title={"When Should I RSVP by?"}>
+        <p>
+          Please{" "}
+          <a
+            className="link"
+            href="https://withjoy.com/joanna-and-jared-jun-25/rsvp"
+            target="_blank"
+          >
+            RSVP
+          </a>{" "}
+          by October 31st.
+        </p>
+      </CollapseItem>
       <CollapseItem title={"When Should I Arrive and How Long Should I Stay?"}>
         <p>
           The ceremony will take place in the evening on June 6th. You should
@@ -64,7 +77,7 @@ function FAQCollapse() {
         </p>
       </CollapseItem>
       <CollapseItem title={"How Did You Get so Lucky, Jared?"}>
-        <p>No clue, but if this is a dream, nobody pinch me!</p>
+        <p>Haven&apos;t got a clue, but if this is a dream, nobody pinch me!</p>
       </CollapseItem>
       <CollapseItem title={"Will Communicating in English Be an Issue?"}>
         <p>Nope, almost everyone at the resort speaks English.</p>

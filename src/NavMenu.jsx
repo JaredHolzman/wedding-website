@@ -39,7 +39,7 @@ export default function NavMenu() {
       </div>
       <ul
         tabIndex={0}
-        className="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 p-2 shadow md:text-4xl"
+        className="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 p-2 text-lg shadow md:text-4xl"
       >
         <li>
           <a href="#">Home</a>

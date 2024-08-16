@@ -24,8 +24,11 @@ function HeroLanding() {
 export default function LandingSection() {
   return (
     <section className="grid w-full scroll-mt-6">
-      <div className="flex w-full justify-center">
-        <img src={wideSideBySide} />
+      <div className="overflow-hidden">
+        <img
+          src={wideSideBySide}
+          className="ml-[-50vw] h-auto w-[200vw] max-w-none object-cover object-bottom lg:ml-0 lg:max-w-full"
+        />
       </div>
       <div className="grid justify-center px-6 py-8 md:py-32">
         <h2 className="mb-8 text-4xl md:text-7xl">

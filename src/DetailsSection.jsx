@@ -13,7 +13,7 @@ export default function DetailsSection() {
       <div className="mx-6 max-w-prose space-y-4 py-12 text-xl md:space-y-12 md:text-4xl">
         <p>
           The ceremony will be held on{" "}
-          <span className="font-semibold">June 06, 2025, 6:00PM</span> at the{" "}
+          <span className="font-semibold">June 06, 2025, 5:00PM</span> at the{" "}
           <a className="link" href="https://majesticmiragepuntacana.com/">
             Majestic Mirage Punta Cana
           </a>

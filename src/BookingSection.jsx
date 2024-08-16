@@ -17,8 +17,11 @@ export default function BookingSection() {
           from the airport. Airline flights must be booked separately.
         </p>
         <p>
-          To allow for flexibility, rooms are NOT reserved. Please book as early
-          as possible to lock-in the best possible rate for yourself.
+          To allow for flexibility, rooms have NOT been reserved ahead of time.
+          Please book as early as possible to lock-in the best possible rate for
+          yourself. There is a $50 per-person deposit due at booking. The final
+          balance will be due by April 2025. Please check your invoice for
+          details after booking.
         </p>
         <div className="flex justify-center py-8">
           <a

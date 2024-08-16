@@ -83,6 +83,24 @@ function FAQCollapse() {
           of water!
         </p>
       </CollapseItem>
+      <CollapseItem title={"What Should I Wear to The Ceremony?"}>
+        <p>
+          The dress code will be beach semi-formal attire. The ceremony and
+          reception will be held in an outdoor private terrace. We recommend
+          attire that is both comfortable and stylish given the warm weather.
+          For example:
+        </p>
+        <p className="mt-4">- Her: Sundresses, maxi dresses, jumpsuits</p>
+        <p>- Him: Linen suits, dress shorts or pants with button up shirt</p>
+      </CollapseItem>
+      <CollapseItem title={"Is There a Registry?"}>
+        <p>
+          Instead of gifts, we would be truly honored if you could celebrate
+          with us by raising a toast and creating lasting memories together.
+          Your presence at our wedding is the most valuable gift we could ask
+          for.
+        </p>
+      </CollapseItem>
     </div>
   );
 }

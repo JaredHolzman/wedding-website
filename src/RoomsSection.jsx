@@ -87,8 +87,8 @@ function RoomsCarousel() {
             (Main room plus a large roof top terrace with an outdoor Jacuzzi).
             Bedding 1 king. 1000 sq ft divided room and terrace.
           `}
-        familyRates={["$612.00", "$805.00", "$999.00"]}
-        clubRates={["$635.00", "$836.00", "$1038.00"]}
+        familyRates={["$688.00", "$908.00", "$1127.00"]}
+        clubRates={["$712.00", "$939.00", "$1166.00"]}
       />
       <RoomSlide
         id="room-swim-up"
@@ -99,8 +99,8 @@ function RoomsCarousel() {
             Jacuzzi, direct access to the pool and a small garden including
             a Bali Bed. Bedding 1 king or 2 queens. 1000 sq ft.
           `}
-        familyRates={["$612.00", "$805.00", "$999.00"]}
-        clubRates={["$635.00", "$836.00", "$1038.00"]}
+        familyRates={["$728.00", "$960.00", "$1193.00"]}
+        clubRates={["$749.00", "$988.00", "$1228.00"]}
       />
       <RoomSlide
         id="room-ocean-view"
@@ -111,8 +111,8 @@ function RoomsCarousel() {
             Jacuzzi. Living room. Bedroom area separated by doors. Bedding 1
             king or 2 queen. 1000 sq ft.
           `}
-        familyRates={["$612.00", "$805.00", "$999.00"]}
-        clubRates={["$635.00", "$836.00", "$1038.00"]}
+        familyRates={["n/a", "n/a", "n/a"]}
+        clubRates={["$793.00", "$1047.00", "$1301.00"]}
       />
     </div>
   );

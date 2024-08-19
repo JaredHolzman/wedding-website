@@ -159,8 +159,11 @@ export default function RoomsSection() {
       <p className="mx-2 mb-6 max-w-prose place-self-center text-sm md:text-4xl">
         {asterisk}These are estimates and subject to change until you book. The
         rates shown are the totals per person, based on 2 adults sharing a room.
-        To receive a quote, please fill out the &quot;Request Room&quot; form
-        where you can specify details about room occupancy, dates, etc.
+        For additional quotes, please{" "}
+        <a href="#booking-contact" className="link">
+          contact
+        </a>{" "}
+        Catherina with details about room occupancy, dates, etc.
       </p>
     </section>
   );

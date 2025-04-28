@@ -26,10 +26,6 @@ export default function DetailsSection() {
           love, tears, Piña Coladas, quality family time, and of course, plenty
           of SUN.
         </p>
-        <p>
-          We are working with a travel agency to help coordinate resort
-          bookings. See below for room options and booking details.
-        </p>
       </div>
     </section>
   );

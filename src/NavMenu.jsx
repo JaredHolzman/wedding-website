@@ -48,7 +48,7 @@ export default function NavMenu() {
           <a href="#details">Event Details</a>
         </li>
         <li>
-          <a href="#booking">Booking</a>
+          <a href="#itinerary">Itinerary</a>
         </li>
         <li>
           <a href="#faq">FAQ</a>

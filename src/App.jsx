@@ -1,10 +1,8 @@
-import RoomsSection from "./RoomsSection";
-import BookingSection from "./BookingSection";
 import LandingSection from "./LandingSection";
 import DetailsSection from "./DetailsSection";
 import FAQSection from "./FAQSection";
 import NavMenu from "./NavMenu";
-
+import ItinerarySection from "./ItinerarySection";
 import heart from "./assets/heart.svg";
 
 function App() {
@@ -14,8 +12,7 @@ function App() {
         <NavMenu />
         <LandingSection />
         <DetailsSection />
-        <BookingSection />
-        <RoomsSection />
+        <ItinerarySection />
         <FAQSection />
       </main>
       <footer className="footer footer-center bg-base-300 p-4 text-base-content md:p-6 md:text-2xl">

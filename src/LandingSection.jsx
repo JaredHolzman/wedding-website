@@ -23,14 +23,17 @@ function HeroLanding() {
 
 export default function LandingSection() {
   return (
-    <section className="grid w-full scroll-mt-6">
-      <div className="overflow-hidden">
+    <section className="grid w-full scroll-mt-6 lg:grid-cols-2">
+      <div id="hero" className="overflow-hidden lg:h-screen">
         <img
           src={wideSideBySide}
-          className="ml-[-50vw] h-auto w-[200vw] max-w-none object-cover object-bottom lg:ml-0 lg:max-w-full"
+          className="ml-[-50vw] h-auto w-[200vw] max-w-none object-cover object-bottom lg:ml-0 lg:h-full lg:w-full lg:max-w-full"
         />
       </div>
-      <div className="grid justify-center px-6 py-8 md:py-32">
+      <div
+        id="hero-content"
+        className="grid justify-center px-6 py-8 md:py-32 lg:py-16 lg:px-16"
+      >
         <h2 className="mb-8 text-4xl md:text-7xl">
           {"We're Getting Married!"}
         </h2>
@@ -58,12 +61,10 @@ export default function LandingSection() {
           <a
             role="button"
             className="btn btn-accent btn-lg btn-wide text-xl md:text-4xl"
-            href="https://withjoy.com/joanna-and-jared-jun-25/rsvp"
-            target="_blank"
+            href="#itinerary"
           >
-            RSVP
+            Itinerary
           </a>
-          {/* <button className="btn">More Info</button> */}
         </div>
       </div>
     </section>

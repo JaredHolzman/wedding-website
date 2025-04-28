@@ -27,12 +27,12 @@ export default function LandingSection() {
       <div id="hero" className="overflow-hidden lg:h-screen">
         <img
           src={wideSideBySide}
-          className="ml-[-50vw] h-auto w-[200vw] max-w-none object-cover object-bottom lg:ml-0 lg:h-full lg:w-full lg:max-w-full"
+          className="ml-[-50vw] h-auto w-[200vw] max-w-none object-cover object-bottom lg:ml-0 lg:size-full lg:max-w-full"
         />
       </div>
       <div
         id="hero-content"
-        className="grid justify-center px-6 py-8 md:py-32 lg:py-16 lg:px-16"
+        className="grid justify-center px-6 pt-8 md:pt-32 lg:p-16"
       >
         <h2 className="mb-8 text-4xl md:text-7xl">
           {"We're Getting Married!"}

@@ -4,9 +4,10 @@ export default function ItinerarySection() {
   return (
     <section
       id="itinerary"
-      className="grid w-full scroll-mt-6 justify-center bg-neutral text-neutral-content"
+      className="grid w-full justify-center bg-neutral py-10 text-neutral-content md:pb-16 md:pt-32"
     >
-      <div className="flex w-full justify-center">
+      <h2 className="mb-8 text-4xl md:text-7xl">Itinerary</h2>
+      <div className="flex w-full justify-center md:px-32 md:py-16">
         <img src={itinerary} />
       </div>
     </section>

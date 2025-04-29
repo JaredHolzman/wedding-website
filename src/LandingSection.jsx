@@ -34,6 +34,15 @@ export default function LandingSection() {
         id="hero-content"
         className="grid justify-center px-6 pt-8 md:pt-32 lg:p-16"
       >
+        <div className="mb-8 flex justify-around md:mb-16">
+          <a
+            role="button"
+            className="btn btn-accent btn-lg btn-wide text-xl md:text-4xl"
+            href="#itinerary"
+          >
+            Itinerary
+          </a>
+        </div>
         <h2 className="mb-8 text-4xl md:text-7xl">
           {"We're Getting Married!"}
         </h2>
@@ -56,15 +65,6 @@ export default function LandingSection() {
           <p>We look forward to seeing you in Paradise!</p>
           <p>Love,</p>
           <p className="text-lg font-semibold md:text-3xl">Jared & Joanna</p>
-        </div>
-        <div className="mb-8 mt-12 flex justify-around md:mt-24">
-          <a
-            role="button"
-            className="btn btn-accent btn-lg btn-wide text-xl md:text-4xl"
-            href="#itinerary"
-          >
-            Itinerary
-          </a>
         </div>
       </div>
     </section>

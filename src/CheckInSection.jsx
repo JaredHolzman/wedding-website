@@ -27,40 +27,38 @@ function CheckInSection() {
   return (
     <Section id="check-in" title="Hotel Check-In">
       <div className="mx-auto max-w-4xl px-4">
-        <div className="mb-8 text-left">
-          <h3 className="mb-4 text-xl font-semibold">
-            Online Check-In Instructions
-          </h3>
-          <p className="mb-4">
+        <h2 className="text-4xl md:text-7xl ">Hotel Early Check-In</h2>
+        <div className="mx-6 max-w-prose space-y-4 py-12 text-xl md:space-y-12 md:text-4xl">
+          <p>
             To expedite your arrival, please complete the online check-in
             process before your stay. Follow these steps:
           </p>
-          <ol className="list-decimal pl-6">
-            <li className="mb-2">
+          <ol className="list-decimal pl-6 text-justify">
+            <li className="mb-4">
               Visit{" "}
               <a
                 href="https://checkin.civitfun.com/chain/majestic"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary hover:underline"
+                className="link"
               >
                 https://checkin.civitfun.com/chain/majestic
               </a>
             </li>
-            <li className="mb-2">
+            <li className="mb-4">
               Enter your reservation number (listed below)
             </li>
-            <li className="mb-2">Complete the required information</li>
+            <li className="mb-4">Complete the required information</li>
             <li>Submit the form</li>
           </ol>
         </div>
 
         <div className="overflow-x-auto">
-          <table className="table w-full">
+          <table className="table w-full text-xl md:text-2xl">
             <thead>
               <tr>
-                <th>Guest Name</th>
-                <th>Reservation Number</th>
+                <th className="text-xl md:text-3xl">Guest Name*</th>
+                <th className="text-xl md:text-3xl">Reservation Number</th>
               </tr>
             </thead>
             <tbody>

@@ -3,6 +3,7 @@ import DetailsSection from "./DetailsSection";
 import FAQSection from "./FAQSection";
 import NavMenu from "./NavMenu";
 import ItinerarySection from "./ItinerarySection";
+import CheckInSection from "./CheckInSection";
 import heart from "./assets/heart.svg";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <LandingSection />
         <DetailsSection />
         <ItinerarySection />
+        <CheckInSection />
         <FAQSection />
       </main>
       <footer className="footer footer-center bg-base-300 p-4 text-base-content md:p-6 md:text-2xl">

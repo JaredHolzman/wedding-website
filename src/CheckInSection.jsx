@@ -23,57 +23,107 @@ const reservations = [
   { name: "YOUNG KWAN YANG", number: "737809" },
 ];
 
-function CheckInSection() {
+function HotelCheckInSection() {
   return (
-    <Section id="check-in" title="Hotel Check-In">
-      <div className="mx-auto max-w-4xl px-4">
-        <h2 className="text-4xl md:text-7xl ">Hotel Early Check-In</h2>
-        <div className="mx-6 max-w-prose space-y-4 py-12 text-xl md:space-y-12 md:text-4xl">
-          <p>
-            To expedite your arrival, please complete the online check-in
-            process before your stay. Follow these steps:
-          </p>
-          <ol className="list-decimal pl-6 text-justify">
-            <li className="mb-4">
-              Visit{" "}
-              <a
-                href="https://checkin.civitfun.com/chain/majestic"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="link"
-              >
-                https://checkin.civitfun.com/chain/majestic
-              </a>
-            </li>
-            <li className="mb-4">
-              Enter your reservation number (listed below)
-            </li>
-            <li className="mb-4">Complete the required information</li>
-            <li>Submit the form</li>
-          </ol>
-        </div>
-
-        <div className="overflow-x-auto">
-          <table className="table w-full text-xl md:text-2xl">
-            <thead>
-              <tr>
-                <th className="text-xl md:text-3xl">Guest Name*</th>
-                <th className="text-xl md:text-3xl">Reservation Number</th>
+    <section
+      id="details"
+      className="grid w-full scroll-mt-6 justify-center bg-base-300 py-10 md:py-32"
+    >
+      <h2 className="text-4xl md:text-7xl ">Hotel Early Check-In</h2>
+      <div className="mx-6 max-w-prose space-y-4 py-12 text-xl md:space-y-12 md:text-4xl">
+        <p>
+          To expedite your arrival, please complete the online check-in process
+          before your stay. Follow these steps:
+        </p>
+        <ol className="list-decimal pl-6 text-justify">
+          <li className="mb-4">
+            Visit:
+            <br />
+            <a
+              href="https://checkin.civitfun.com/chain/majestic"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+            >
+              https://checkin.civitfun.com/chain/majestic
+            </a>
+          </li>
+          <li className="mb-4">Enter your reservation number (listed below)</li>
+          <li className="mb-4">Complete the required information</li>
+          <li>Submit the form</li>
+        </ol>
+        <table className="table w-full text-xl md:text-2xl">
+          <thead>
+            <tr>
+              <th className="text-xl md:text-3xl">Guest Name</th>
+              <th className="text-xl md:text-3xl">Reservation Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            {reservations.map((reservation, index) => (
+              <tr key={index}>
+                <td>{reservation.name}</td>
+                <td>{reservation.number}</td>
               </tr>
-            </thead>
-            <tbody>
-              {reservations.map((reservation, index) => (
-                <tr key={index}>
-                  <td>{reservation.name}</td>
-                  <td>{reservation.number}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+            ))}
+          </tbody>
+        </table>
       </div>
-    </Section>
+    </section>
   );
 }
 
-export default CheckInSection;
+// function CheckInSection() {
+//   return (
+//     <Section id="check-in" title="Hotel Check-In">
+//       <div className="mx-auto max-w-4xl px-4">
+//         <h2 className="text-4xl md:text-7xl ">Hotel Early Check-In</h2>
+//         <div className="mx-6 max-w-prose space-y-4 py-12 text-xl md:space-y-12 md:text-4xl">
+//           <p>
+//             To expedite your arrival, please complete the online check-in
+//             process before your stay. Follow these steps:
+//           </p>
+//           <ol className="list-decimal pl-6 text-justify">
+//             <li className="mb-4">
+//               Visit{" "}
+//               <a
+//                 href="https://checkin.civitfun.com/chain/majestic"
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="link"
+//               >
+//                 https://checkin.civitfun.com/chain/majestic
+//               </a>
+//             </li>
+//             <li className="mb-4">
+//               Enter your reservation number (listed below)
+//             </li>
+//             <li className="mb-4">Complete the required information</li>
+//             <li>Submit the form</li>
+//           </ol>
+//         </div>
+
+//         <div className="overflow-x-auto">
+//           <table className="table w-full text-xl md:text-2xl">
+//             <thead>
+//               <tr>
+//                 <th className="text-xl md:text-3xl">Guest Name*</th>
+//                 <th className="text-xl md:text-3xl">Reservation Number</th>
+//               </tr>
+//             </thead>
+//             <tbody>
+//               {reservations.map((reservation, index) => (
+//                 <tr key={index}>
+//                   <td>{reservation.name}</td>
+//                   <td>{reservation.number}</td>
+//                 </tr>
+//               ))}
+//             </tbody>
+//           </table>
+//         </div>
+//       </div>
+//     </Section>
+//   );
+// }
+
+export default HotelCheckInSection;

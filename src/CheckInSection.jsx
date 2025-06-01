@@ -48,14 +48,16 @@ function HotelCheckInSection() {
               https://checkin.civitfun.com/chain/majestic
             </a>
           </li>
-          <li className="mb-4">Enter your reservation number (listed below)</li>
+          <li className="mb-4">
+            Enter your party&apos;s reservation number (listed below)
+          </li>
           <li className="mb-4">Complete the required information</li>
           <li>Submit the form</li>
         </ol>
         <table className="table w-full text-xl md:text-2xl">
           <thead>
             <tr>
-              <th className="text-xl md:text-3xl">Guest Name</th>
+              <th className="text-xl md:text-3xl">Party Name</th>
               <th className="text-xl md:text-3xl">Reservation Number</th>
             </tr>
           </thead>

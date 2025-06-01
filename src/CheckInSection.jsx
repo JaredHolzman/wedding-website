@@ -26,7 +26,7 @@ const reservations = [
 function HotelCheckInSection() {
   return (
     <section
-      id="details"
+      id="check-in"
       className="grid w-full scroll-mt-6 justify-center bg-base-300 py-10 md:py-32"
     >
       <h2 className="text-4xl md:text-7xl ">Hotel Early Check-In</h2>
